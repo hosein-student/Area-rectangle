@@ -27,5 +27,10 @@ namespace WindowsFormsApplication1
             double area= CalculateRectangleArea(width,height);
             MessageBox.Show(area.ToString()); 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("خوش امدید");
+        }
     }
 }
