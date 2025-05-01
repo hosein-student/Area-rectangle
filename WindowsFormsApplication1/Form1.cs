@@ -22,10 +22,16 @@ namespace WindowsFormsApplication1
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            double width = double.Parse(textBox1.Text);
-            double height= double.Parse(textBox2.Text);
-            double area= CalculateRectangleArea(width,height);
-            MessageBox.Show(area.ToString()); 
+            try
+            {
+                double width = double.Parse(txt_width.Text);
+                double height = double.Parse(txt_height.Text);
+                double area = CalculateRectangleArea(width, height);
+                MessageBox.Show(area.ToString());
+            }
+            catch {
+                MessageBox.Show("عدد را صحیح وارد کنید ");
+                  }
         }
 
         private void Form1_Load(object sender, EventArgs e)
