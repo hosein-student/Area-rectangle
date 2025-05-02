@@ -5,3 +5,7 @@
 /WindowsFormsApplication1/obj
 /WindowsFormsApplication1/bin/Debug
 /.vs
+
+# Ignore Visual Studio SUO files
+*.suo
+*.user
